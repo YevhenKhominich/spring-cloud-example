@@ -1,0 +1,11 @@
+zuul:
+  ignored-services: "*"
+  routes:
+    hello-service:
+      path: /hello-service/**
+      serviceId: hello-service
+      stripPrefix: true
+
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
